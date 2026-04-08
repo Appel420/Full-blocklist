@@ -6,6 +6,7 @@ result back to the file.
 """
 
 import re
+import ssl
 import sys
 import urllib.request
 from pathlib import Path
@@ -35,8 +36,9 @@ def fetch_entries(url: str) -> set[str]:
     """Download *url* and return a set of 'domain' strings."""
     entries: set[str] = set()
     try:
+        ssl_ctx = ssl.create_default_context()
         req = urllib.request.Request(url, headers={"User-Agent": "blocklist-updater/1.0"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=30, context=ssl_ctx) as resp:
             for raw_line in resp:
                 line = raw_line.decode("utf-8", errors="replace").strip()
                 m = HOSTS_LINE_RE.match(line)
@@ -93,7 +95,9 @@ def main() -> None:
     with BLOCKLIST_PATH.open("w", encoding="utf-8") as fh:
         for line in header_lines:
             fh.write(line + "\n")
-        if header_lines and header_lines[-1] != "":
+        # Ensure exactly one blank line between the header and the block entries
+        trimmed = [l for l in header_lines if l.strip()]
+        if trimmed:
             fh.write("\n")
         for domain in sorted(all_domains):
             fh.write(f"0.0.0.0 {domain}\n")
