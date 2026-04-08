@@ -3,6 +3,7 @@ FULL blocklist
 # Extra Meta 
 sh su rm -rf wasm chmod 000 pkill -9 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
