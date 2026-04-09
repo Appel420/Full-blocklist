@@ -24,6 +24,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -46012,6 +46013,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 rs6.net
 0.0.0.0 rsa.pub
 0.0.0.0 rsc-ads.vidaahub.com
+0.0.0.0 rsc-mntz.vidaahub.com
 0.0.0.0 rsc.scmspain.com
 0.0.0.0 rscdn.cxense.com
 0.0.0.0 rschanger.com
