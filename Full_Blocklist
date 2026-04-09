@@ -17,6 +17,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -2808,6 +2809,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 acuityads.com
 0.0.0.0 acuityplatform.com
 0.0.0.0 aculo.fr
+0.0.0.0 acustomizedgift.com
 0.0.0.0 acutephotos.com
 0.0.0.0 acuteteac.digital
 0.0.0.0 acutsprod.112.2o7.net
