@@ -375,6 +375,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -4859,6 +4860,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 adk2x.com
 0.0.0.0 adklip.com
 0.0.0.0 adkontekst.pl
+0.0.0.0 adkora.com
 0.0.0.0 adksitestaging.com
 0.0.0.0 adktracking-1671721947.eu-west-3.elb.amazonaws.com
 0.0.0.0 adl-marine.com
