@@ -588,6 +588,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -62697,6 +62698,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 security-verification.site
 0.0.0.0 security.schwab-5.click
 0.0.0.0 security60-e.com
+0.0.0.0 securityannex.net
 0.0.0.0 securityscan.us
 0.0.0.0 secursovra.rest
 0.0.0.0 secuversionnnn.s3.ap-northeast-1.amazonaws.com
