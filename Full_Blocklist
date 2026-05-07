@@ -623,6 +623,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -15965,6 +15966,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 bugera.popunder.ru
 0.0.0.0 bugly.qq.com
 0.0.0.0 bugnareins.cyou
+0.0.0.0 bugpuk.ru
 0.0.0.0 bugsee-api-prod.elasticbeanstalk.com
 0.0.0.0 bugsense.com
 0.0.0.0 bugungundem.com
