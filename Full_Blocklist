@@ -695,6 +695,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -76072,6 +76073,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 trk4.com
 0.0.0.0 trk42.net
 0.0.0.0 trkingace.com
+0.0.0.0 trkm.mg.thegoodybag.co.uk
 0.0.0.0 trkmydomain.com
 0.0.0.0 trkn.us
 0.0.0.0 trkoptimizer.com
