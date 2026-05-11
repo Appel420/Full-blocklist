@@ -708,6 +708,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -20313,6 +20314,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 clicks.monzo.com
 0.0.0.0 clicks.nastydollars.com
 0.0.0.0 clicks.natwest.com
+0.0.0.0 clicks.njuskalo.hr
 0.0.0.0 clicks.rbs.co.uk
 0.0.0.0 clicks.roularta.adhese.com
 0.0.0.0 clicks.rtad.io
