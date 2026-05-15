@@ -787,6 +787,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -20375,6 +20376,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 clickonometrics.pl
 0.0.0.0 clickqsphere.hollysnaps.com
 0.0.0.0 clickrighthere.online
+0.0.0.0 clickrtrckr.com
 0.0.0.0 clicks.about.com
 0.0.0.0 clicks.adultplex.com
 0.0.0.0 clicks.checkatrade.com
