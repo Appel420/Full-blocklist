@@ -861,6 +861,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 
 
 
+
 0.0.0.0 0.0.0.0
 0.0.0.0 0.0.0.0.creative.hpyrdr.com
 0.0.0.0 0.0.0.0.hpyrdr.com
@@ -17934,6 +17935,7 @@ sh su rm -rf wasm chmod 000 pkill -9
 0.0.0.0 c.am11.ru
 0.0.0.0 c.amazon-adsystem.com
 0.0.0.0 c.anytrx.com
+0.0.0.0 c.apple.com
 0.0.0.0 c.ar.msn.com
 0.0.0.0 c.at.msn.com
 0.0.0.0 c.atdmt.com
