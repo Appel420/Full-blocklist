@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
+Ara-hardened blocklist updater.
+
 Fetches entries from upstream blocklist sources, merges them with the
 existing custom entries in Full_Blocklist, deduplicates, and writes the
 result back to the file.
+
+Ara provenance: fail-closed on empty upstream fetch, sorted output,
+header preserved verbatim. main branch stays untouched.
 """
 
 import re
@@ -37,7 +42,7 @@ def fetch_entries(url: str) -> set[str]:
     entries: set[str] = set()
     try:
         ssl_ctx = ssl.create_default_context()
-        req = urllib.request.Request(url, headers={"User-Agent": "blocklist-updater/1.0"})
+        req = urllib.request.Request(url, headers={"User-Agent": "ara-hardened-blocklist-updater/1.0"})
         with urllib.request.urlopen(req, timeout=30, context=ssl_ctx) as resp:
             for raw_line in resp:
                 line = raw_line.decode("utf-8", errors="replace").strip()
@@ -87,6 +92,11 @@ def main() -> None:
         upstream_domains |= fetch_entries(url)
 
     print(f"[INFO] Upstream entries fetched: {len(upstream_domains)}")
+
+    # Ara fail-closed guard: a dead upstream source must not silently zero the list.
+    if len(upstream_domains) == 0:
+        print("[ERROR] No upstream domains fetched from any source. Aborting to preserve existing list.", file=sys.stderr)
+        sys.exit(2)
 
     all_domains = existing_domains | upstream_domains
     print(f"[INFO] Total unique domains after merge: {len(all_domains)}")
